@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Add_Customer";
+}
+
+<h2>Add_Customer</h2>
+
+<div>
+ <script src="~/Scripts/jquery-1.7.1.min.js" type="text/javascript" > </script>
+ <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+ <script src="~/Scripts/jquery.validate.min.js"></script>
+
+        
+    <form id ="myForm" action="/Home/Add_Customer" method="post">
+    
+        <p>
+     <input type="submit" value="Save" />
+     </p>
+
+        <div id="div_label_textBox_view">
+    </div>
+
+<table style="width:100%" >
+
+        
+        <tr>
+        <td>
+        @Html.Label("FirstName")
+        
+        <input type="text" name="FirstName" required  />
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+        @Html.Label("LastName")
+        
+        <input type="text" name="LastName" required  />
+        </td>
+        </tr>
+    
+        <tr>
+        <td>
+        @Html.Label("ContactNo")
+        
+        <input type="text" name="ContactNo" required  />
+        </td>
+        </tr>
+       
+        <tr>
+        <td>
+        @Html.Label("Address")
+        
+        <input type="text" name="Address" required  />
+        </td>
+        </tr>
+
+    </table>
+    </form>
+    
+    </div>

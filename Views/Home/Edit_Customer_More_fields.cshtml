@@ -1,0 +1,87 @@
+﻿@model System.Collections.Generic.List<string>
+
+
+<h2>Edit_Customer_More_fields</h2>
+
+<div>
+ <script src="~/Scripts/jquery-1.7.1.min.js" type="text/javascript" > </script>
+ <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+ <script src="~/Scripts/jquery.validate.min.js"></script>
+
+    @Ajax.ActionLink("Add Field", "field_partial_view", new AjaxOptions()
+            {
+                
+                HttpMethod = "GET",
+                UpdateTargetId = "div_label_textBox_view",
+                InsertionMode = InsertionMode.Replace 
+            }
+            )
+
+    
+    
+    <form id ="myForm" action="/Home/Edit_Customer_More_fields" method="post">
+    
+        <p>
+     <input type="submit" value="Update" />
+     </p>
+
+        <div id="div_label_textBox_view">
+    </div>
+
+<table style="width:100%" >
+
+@{
+    bool toggle = true ;
+    string name = null ,temp="";
+    
+    foreach (var pair_value in Model)
+    {
+        
+
+
+        if (toggle)
+        {
+
+            name = pair_value;
+            temp = name;
+            
+        
+        <tr>
+        <td><label for=name>@name</label></td>
+        </tr>
+            toggle = false;
+        
+        
+        }
+        else
+        {
+            if (name.Equals("Comment"))
+            {
+                <tr>
+        <td>
+            
+            
+            <textarea name=@name rows="5" cols="25" readonly>@pair_value</textarea>
+            
+        </td>
+        </tr>
+                
+                toggle = true;
+                continue;
+            }
+        
+        <tr>
+        <td>
+        <input type="text" required name=@name value=@pair_value />
+        </td>
+        </tr>
+
+        toggle = true;
+    }
+    
+}
+}
+    </table>
+    </form>
+    
+    </div>

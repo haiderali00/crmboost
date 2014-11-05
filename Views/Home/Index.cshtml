@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head><title>MyCSS - No Master Layout</title>
+    <link href="@Url.Content("~/css/IndexStyle.css")" rel="stylesheet" type="text/css" />
+    
+    <style>
+
+      
+
+    </style>
+    
+
+</head>
+
+
+    <body id="MainTable">
+<table  id="IndexMainTable">
+  <tr>
+    <td><table id="Header">
+      <tr>
+        <td id="ImageHeader"><img src="~/img/crm_logo.png"  alt="CRMBOOST" /></td>
+        <td >&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+  
+   
+  <tr id="Nav">
+  
+    <td  id="list" ><ul>
+	
+    <li>@Html.ActionLink("Home" , "Index"  , "Home")</li>
+    <li>@Html.ActionLink("Feedback" , "Feedback"  , "Home")</li> 
+    <li>@Html.ActionLink("Add Customer" , "Add_Customer"  , "Home")</li>
+    <li>@Html.ActionLink("Show_Users" , "Show_Users"  , "Home")</li>
+    <li>@Html.ActionLink("Login" , "Login"  , "Home")</li>
+    <li>@Html.ActionLink("Customer_Profile" , "Customer_Profile"  , "Home")</li>
+     
+    
+    
+  </ul>&nbsp;  </td>
+  </tr>
+  
+  <tr>
+     <td id="banner"><img src="~/img/crm-banner.jpg"  alt="banner" /></td>
+  <tr>
+    <td><table id="belowbanner">
+      <tr>
+        <td class="fistImage" ><img src="~/img/telephony_main_box.png"  alt="landlines" /></td>
+        <td class="fistImage" ><img src="~/img/broadband_box.png"  alt="broadband" /></td>
+        <td class="fistImage" ><img src="~/img/smart_tv_box.png" width="329" height="177" alt="tv" /></td>
+      </tr>
+    </table></td>
+  </tr><tr>
+    <td id="backgroudcolor"><table id="fulllength" border="0" >
+      <tr>
+        <td class="top"><h3>Landline</h3>
+          <div>Staying in, doesn't mean you're out of the picture.</div></td>
+        <td class="topImage" ><h3>Broadband</h3>
+          <div>PTCL Broadband is the largest and the fastest growing Broadband service in Pakistan</div></td>
+        <td class="topImage" ><h3>Smart TV</h3>
+          <div>PTCL SMART TV service using its state of the art Broadband network, employs the IPTV (Internet Pro...</div></td>
+      </tr>
+    </table></td>
+  </tr>
+    <tr>
+    <th  id="footer">
+    Welcome to my Call Management Web Site -CRM</th>
+  </tr>
+
+  
+</table>
+
+
+</body>
+
+
+</html>

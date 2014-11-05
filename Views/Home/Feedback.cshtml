@@ -1,0 +1,47 @@
+﻿@{
+    Layout=null;
+}
+
+
+
+<html>
+<head>
+    <link href="@Url.Content("~/css/feedbackstyleStyle.css")" rel="stylesheet"  />
+   
+    <title>Feedback</title>
+    
+    <script src="~/Scripts/jquery-1.7.1.min.js" type="text/javascript" > </script>
+ <script src="~/Scripts/jquery.validate.min.js"></script>
+</head>
+
+<body >
+    
+    <form id ="myForm" action="/Home/Feedback" method="post">
+
+<table id="feedbacktable"  border="0">
+  <tr>
+    <td>&nbsp;
+    
+        <div class="labelpos">
+<div class="extraspace">FirstName<br></div>
+<input class= "boxpos" type="text" required name="FirstName"><br>
+<br>
+
+<div class="extraspace">LastName<br> </div> 
+<input class= "boxpos" type="text" required name="LastName"><br>
+<br></div>
+
+<div class="commentspace ">Comments: <br></div>
+<textarea name="comments" required rows="15" cols="70"></textarea><br><br>
+
+<div class="commentspace "><input type="submit" value="Submit"></div>
+ 
+</td>
+  </tr>
+</table>
+</form>
+
+</body>
+
+
+</html>

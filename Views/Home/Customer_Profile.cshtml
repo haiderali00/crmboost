@@ -1,0 +1,32 @@
+﻿@model System.Collections.Generic.List<string>
+
+
+<h2>Customers_Saved_In_MongoDB</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customer_Profile</title>
+</head>
+<body>
+    
+    <div>
+          
+       @foreach(string cust_document in Model)
+       {
+        
+           string [] st1 ;
+           string [] st2;
+           <strong>@cust_document</strong>
+           st1 = cust_document.Split(':');
+           st2 = st1[1].Split(',');
+           
+           @Html.ActionLink("Delete", "Delete", new { Id = @st2[0] });
+           @Html.ActionLink("Edit_Customer", "Edit_Customer_More_fields", new { Id = @st2[0] });
+           <hr />
+       }
+    </div>
+</body>
+</html>

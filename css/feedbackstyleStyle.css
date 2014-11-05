@@ -1,0 +1,36 @@
+﻿body 
+{
+    background-color:gray;
+}
+
+.labelpos 
+{
+    margin-left:160px;
+}
+
+.boxpos 
+{
+    margin-left:50px;
+}
+
+#feedbacktable 
+{
+    
+    vertical-align:central;
+    margin-left:450px;
+    margin-right:50px;
+    margin-top:50px;
+    margin-bottom:50px;
+    
+
+}
+
+.extraspace 
+{
+    margin-left:95px;
+}
+
+.commentspace 
+{
+ margin-left:250px;
+}

@@ -1,0 +1,182 @@
+﻿@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+body 
+{
+    background-color:gray;
+}
+
+#mainbody 
+{
+      
+    background-image: url('~/img/Textures.jpg') ;
+
+}
+
+#Nav #list 
+{
+    background-color:#B3B3FF;
+}
+
+#footer 
+{
+    background-color:#73CF16;
+}
+
+.fistImage 
+{
+    width:33%;
+}
+.top 
+{
+    vertical-align:top;
+
+}
+#backgroudcolor 
+{
+background-color:#D8DCC9;
+}
+
+#fulllength {
+    width:100%;
+    padding:15px 15px 15px 15px;
+    border-spacing:5px 5px 5px 5px;
+}
+.topImage 
+{
+    vertical-align:top;
+    width:33%;
+}
+
+#MainTable {
+	
+	background-image: url("~/img/Textures.jpg");
+	
+	}
+
+#MainTable #IndexMainTable {
+	margin:auto;
+	background-color: #FFF;
+	width: 800px;
+	border: 0;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+}
+
+#MainTable #IndexMainTable tr td #Header {
+	width:100%;
+	}
+
+#MainTable #IndexMainTable tr td #Header tr td {
+	width:33%;
+	
+}
+#MainTable #IndexMainTable tr td #Header tr #ImageHeader {
+	width:250px;
+	height:105px;
+}
+#MainTable #IndexMainTable tr #banner {
+	width:960px;
+	height:298px;
+}
+#MainTable #IndexMainTable tr td #belowbanner {
+	width:100%;
+}
+#MainTable #IndexMainTable tr td #belowbanner tr #fistImage {
+	width:33%;
+}
+#MainTable #IndexMainTable #Nav td ul li a {
+	float:right;
+	
+}
+
+#MainTable #IndexMainTable tr td #belowbanner tr #secondImage {
+	width:33%;
+}
+#MainTable #IndexMainTable #Nav td ul li a {
+		float: right;
+		
+}
+
+#MainTable #IndexMainTable tr td #belowbanner tr #thirdImage {
+	width:33%;
+}
+
+#Nav td ul li {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
+	float: right;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #B3B3FF;
+	text-decoration: none;
+	background-color: #B3B3FF;
+	display: inline;
+	margin: 3px;
+	padding-top: 7px;
+	padding-right: 3px;
+	padding-bottom: 7px;
+	padding-left: 3px;
+}#MainTable #IndexMainTable tr th {
+	background-color: #73CF16;
+}
+
+#button1 
+{
+   margin-left:275px;
+}
+
+ #DatabaseTable {
+
+    
+	background-color: #CCC;
+	display: table-caption;
+	margin-left:275px;
+	padding: 15px;
+	width: 935px;
+	border-top-style: groove;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: groove;
+	border-top-color: #36F;
+	list-style-position: hanging;
+	list-style-type: square;
+	overflow: scroll;
+
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
+	
+	font-style: normal;
+	
+	font-weight: bold;
+	
+	
+}
+
+.cellwidth 
+{
+    width:400px;
+   
+}

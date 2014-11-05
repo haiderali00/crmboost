@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CrmBoostMongoDb1.Users.User>
+
+@{
+    ViewBag.Title = "Show_Users";
+}
+
+<h2>Show_Users</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create_User")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit_User", new { id=item.Id }) |
+            
+            @Html.ActionLink("Delete", "Delete_User", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
